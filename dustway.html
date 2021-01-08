@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>DustWay</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {background-color: powderblue;}
+        .black {background-color: black;}
+    </style>
+</head>
+
+<body>
+    <script>alert("Use the button to detect dust!")</script>
+
+    <div class="container" style="text-align: center; margin-top:50px">
+        <button type="button" class="btn btn-primary btn-lg">DustWay</button>
+    </div>
+
+    <script>
+        var b = document.querySelector("button");
+        b.addEventListener("click", function() {
+            document.body.classList.toggle("black");
+            new Audio("swoosh.mp3").play();
+        });
+    </script>
+</body>
+
+</html>
